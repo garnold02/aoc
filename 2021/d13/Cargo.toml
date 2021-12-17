@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 stdsol = { path = "../../common/stdsol" }
+image = "0.23.14"

@@ -14,8 +14,11 @@ where
     let part2 = part2();
     let end = Instant::now();
 
-    println!("Part 1: {:?} ({})", part1, (middle - start).into());
-    println!("Part 2: {:?} ({})", part2, (end - middle).into());
+    let time1: Time = (middle - start).into();
+    let time2: Time = (end - middle).into();
+
+    println!("Part 1: {:?} ({})", part1, time1);
+    println!("Part 2: {:?} ({})", part2, time2);
 }
 
 struct Time {
