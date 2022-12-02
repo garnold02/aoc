@@ -2,12 +2,8 @@ import Data.List.Extra (sort, splitOn)
 
 solve = do
   input <- readFile "input.txt"
-  print $ partOne input
-  print $ partTwo input
-
-partOne = maximum . parse
-
-partTwo = sum . take 3 . revSort
+  print $ maximum $ parse input
+  print $ sum $ take 3 $ revSort input
 
 revSort = reverse . sort . parse
 
