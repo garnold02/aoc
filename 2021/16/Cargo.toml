@@ -1,0 +1,8 @@
+[package]
+name = "d16"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+stdsol = { path = "../../common/stdsol" }
+hex = "0.4.3"
